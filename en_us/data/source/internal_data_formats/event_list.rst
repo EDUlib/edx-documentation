@@ -56,6 +56,7 @@ Alphabetical Event List
      - :ref:`enrollment` and :ref:`instructor_enrollment`
    * - ``edx.course.enrollment.deactivated`` 
      - :ref:`enrollment` and :ref:`instructor_enrollment`
+<<<<<<< HEAD
    * - ``edx.course.enrollment.mode_changed``
      - :ref:`enrollment`
    * - ``edx.course.enrollment.upgrade.clicked``
@@ -76,6 +77,14 @@ Alphabetical Event List
      - :ref:`video`, see ``hide_transcript``
    * - ``edx.video.transcript.shown``
      - :ref:`video`, see ``show_transcript``
+   * - ``edx.forum.comment.created``
+     - :ref:`forum_events`
+   * - ``edx.forum.response.created``
+     - :ref:`forum_events`
+   * - ``edx.forum.searched``
+     - :ref:`forum_events`
+   * - ``edx.forum.thread.created``
+     - :ref:`forum_events`
    * - ``get_anon_ids``
      - :ref:`Instructor_Event_Types`
    * - ``get_student_progress_page``
