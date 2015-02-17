@@ -14,6 +14,9 @@ January-March 2015
 
    * - Date
      - Change
+   * - 4 Mar 2015
+     - Added events for the display of :ref:`Google components<content>` to the
+       Tracking Logs chapter.
    * - 23 Feb 2015
      - Added new common fields for HTTP header values and new events for video
        caption use to the :ref:`Tracking Logs` chapter.
