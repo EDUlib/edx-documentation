@@ -21,11 +21,12 @@ configuration steps (as applicable).
 
 #. Determine the method you want to use to assign students to cohorts:
    
-  * :ref:`Define automatic cohorts<Define Auto Cohorts>`
+  * :ref:`Implement an automated assignment strategy<Implementing the Automated
+    Assignment Strategy>`
 
-  * :ref:`Define manual cohorts<Define Manual Cohorts>` and
-    :ref:`manually assign students<Assign Students to Cohorts Manually>`
-    to them
+  * :ref:`Implement a manual assignment strategy<Implementing the Manual
+    Assignment Strategy>` and :ref:`manually assign students<Assign Students to
+    Cohorts Manually>` to them
 
   * :ref:`Use a combination of automated and manual assignment<Hybrid
     Assignment>`.
@@ -42,43 +43,104 @@ configuration steps (as applicable).
     some configuration tasks only if you want :ref:`content-specific discussion
     topics to be unified<Make ContentSpecific Discussion Topics Unified>`.
 
-You complete these procedures in Studio and on the Instructor Dashboard. For an
-optimal student experience, you should make sure that configuration of the
-cohort feature is as complete as possible prior to the start date of your
-course.
+You complete these procedures on the **Cohort Management** tab on the Instructor Dashboard. 
 
-If you need to make changes to the way you have configured cohorts while your
-course is running, be aware of the implications of your changes. For more
+For an optimal student experience, you should make sure that configuration of
+the cohort feature is as complete as possible prior to the start date of your
+course. If you need to make changes to the way you have configured cohorts while
+your course is running, be aware of the implications of your changes. For more
 information, see :ref:`Altering Cohort Configuration`.
+
+
+.. _Implementing the Automated Assignment Strategy:
+
+***************************************************
+Implementing an Automated Assignment Strategy
+***************************************************
+
+To implement an automated assignment strategy of students to cohorts, you
+:ref:`enable the cohort feature<Enable Cohorts>` for your course, :ref:`create
+cohorts<Add Cohorts>`, and specify that students are automatically assigned to
+each cohort.
+
+You create automated cohorts for either an all automated assignment strategy, or
+for a hybrid assignment strategy. For more information, see :ref:`All Automated
+Assignment` or :ref:`Hybrid Assignment`.
+
+.. note:: You can add students manually to any cohort, whether it was created as
+   an automated cohort or a manual cohort.
+
+
+.. _Implementing the Manual Assignment Strategy:
+
+***************************************************
+Implementing a Manual Assignment Strategy
+***************************************************
+
+To implement a manual assignment strategy of students to cohorts, you
+:ref:`enable the cohort feature<Enable Cohorts>` for your course, :ref:`create
+cohorts<Add Cohorts>`, and specify that students are manually assigned to each
+cohort.
+
+You create manual cohorts for either an all manual assignment strategy, or for a
+hybrid assignment strategy. For more information, see :ref:`All Manual
+Assignment` or :ref:`Hybrid Assignment`.
+
+.. note:: You can add students manually to any cohort, whether it was created as
+   an automated cohort or a manual cohort.
 
 
 .. _Enable Cohorts:
 
-***************************
-Enabling the Cohort Feature
-***************************
+*********************************
+Enabling Cohorts in your Course
+*********************************
 
 To enable cohorts in your course, follow these steps.
 
-#. Open the course in Studio. 
+#. In the LMS, select **Instructor**, then select **Cohort Management**. 
 
-#. Select **Settings**, then **Advanced Settings**.
-
-#. In the **Cohort Configuration** field, place your cursor between the
-   supplied pair of braces.
-
-#. Type ``"cohorted": true``. 
-
-#. Click **Save Changes**. Studio reformats the name:value pair you just
-   entered to indent it on a new line.
+#. Select **Enable Cohorts**.
    
- .. image:: ../../../shared/building_and_running_chapters/Images/Enable_cohorts.png
-  :alt: Cohort Configuration dictionary field with the cohorted key defined 
-        as true
+You can now implement the cohort strategy for your course by :ref:`adding
+cohorts<Add Cohorts>`.
 
-You can then :ref:`implement the automated assignment strategy<Implementing the
-Automated Assignment Strategy>`, :ref:`implement the manual assignment
-strategy<Implementing the Manual Assignment Strategy>`, or both.
+
+.. _Add Cohorts:
+
+****************
+Adding Cohorts
+****************
+
+After you enable cohorts, you can add cohorts.
+
+#. In the LMS, select **Instructor**, then select **Cohort Management**.
+
+#. Click **Add Cohort**.
+
+#. Enter a name for the cohort.
+
+.. note:: Students can see the name of the cohort they are assigned to. The
+   message "This post is visible only to {cohort name}" appears with each post
+   in discussion topics that are divided by cohort. See :ref:`Read the Cohort
+   Indicator in Posts`.
+
+#. Specify whether students are automatically or manually assigned to this
+   cohort.
+   
+#. Optionally, select **Select a Content Group** to associate the cohort with a
+   :ref:`content group<About Content Groups>`. For information about creating
+   cohort-specific courseware by associating cohorts with content groups, see
+   :ref:`Cohorted Courseware Overview`.
+
+#. Click **Save**. 
+   
+Continue implementing your cohort strategy by creating additional cohorts as
+applicable, and specifying manual or automatic assignment method for each
+cohort.
+
+For details about adding students to a cohort by uploading a .csv file, see
+:ref:`Assign Students to Cohort Groups by uploading CSV`/
 
 .. note:: When your course starts, you must have at least one cohort in your
    course that has automatic assignment. If you have not created at least one
@@ -96,28 +158,11 @@ student, review the student profile information for your course. See
    :ref:`Altering Cohort Configuration`.
    
 
-.. _Implementing the Automated Assignment Strategy:
+.. _About Auto Cohorts:
 
-***************************************************
-Implementing the Automated Assignment Strategy
-***************************************************
-
-To implement automated assignment of students to cohorts, you define auto
-cohorts in the **Cohort Configuration** advanced setting field.
-
-You complete this procedure if you are using either the automated or hybrid
-assignment strategy for your course. For more information, see :ref:`All
-Automated Assignment` or :ref:`Hybrid Assignment`.
-
-.. note:: You can add students manually to any cohort, whether it was created as
-   an automated cohort or a manual cohort.
-
-
-.. _Define Auto Cohorts:
-
-=======================
-Define Auto Cohorts
-=======================
+=================
+Automated Cohorts
+=================
 
 .. note:: When your course starts, you must have at least one cohort in your
    course that has automatic assignment. If you have not created at least one
@@ -125,143 +170,32 @@ Define Auto Cohorts
    accesses your course content, edX creates a default cohort to which students
    are automatically assigned.
 
-Before you define your auto cohorts, note that students can see the name of the
-cohort that they are assigned to. The message "This post is visible only to
-{cohort name}" appears with each post in discussion topics that are divided by
-cohort. See :ref:`Read the Cohort Indicator in Posts`.
-
-
-#. Open the course in Studio. 
-
-#. Select **Settings**, then **Advanced Settings**.
-
-#. In the **Cohort Configuration** field, place your cursor after the opening
-   brace character (``{``) and press Enter.
-
-#. On the new line, you define the ``"auto_cohort_groups":`` policy key,
-   followed by one or more cohort names enclosed by square brackets (``[ ]``).
-   You can define a set of auto cohorts or just one.
-
-   To define a set of cohorts, you type each cohort name on a new line, enclose
-   it within quotation marks (``" "``), and separate the quoted name values
-   with commas. For example:
-   
-   .. code-block:: xml 
-
-      "auto_cohort_groups": [
-          "Example Cohort Name A",
-          "Example Cohort Name B",
-          "Example Cohort Name C"
-      ]
-   
-
-.. comment is here only to allow indented formatting of next line
-
-  You can also define only a single auto cohort. Type ``"auto_cohort_groups":
-  ["Example Cohort Name"]`` and then press Enter again.
-
-5. Type a comma after the closing square bracket character (``],``). You must
-   include a comma to separate each of the policy keys that you define.
-   
-#. Click **Save Changes**. Studio resequences and reformats your entry. Scroll
-   back to the **Cohort Configuration** field to verify that your entry was
-   saved as you expect. Entries that do not contain all of the required
-   punctuation characters revert to the previous value when you save, and no
-   warning is presented.
-
- .. image:: ../../../shared/building_and_running_chapters/Images/Multiple_auto_cohort_groups.png
-  :alt: Cohort Configuration dictionary field with the auto_cohort_groups key 
-        with three values
-
-.. spacer line
-
- .. image:: ../../../shared/building_and_running_chapters/Images/Single_auto_cohort_group.png
-  :alt: Cohort Configuration dictionary field with the auto_cohort_groups key 
-        with one value
-
 The first time a student first views any course content, including the course
 **Discussion** page or content-specific discussion topics, if she is not already
-assigned to a cohort, she is randomly assigned to one of the auto cohorts.
+assigned to a cohort, she is randomly assigned to one of the automated cohorts.
+If no automated cohorts exist, the system creates a :ref:`default cohort` and
+assigns the student to this default cohort.
 
-.. _Implementing the Manual Assignment Strategy:
-
-***************************************************
-Implementing the Manual Assignment Strategy
-***************************************************
-
-To implement manual assignment of students to cohorts, you define manual cohorts
-and then assign students to them.
-
-You complete these procedures if you are using either the manual or hybrid
-assignment strategy for your course. For more information, see :ref:`All Manual
-Assignment` or :ref:`Hybrid Assignment`.
-
-You must :ref:`enable the cohort feature<Enable Cohorts>` for your course
-before you can complete these procedures.
+For a report that includes the cohort assignment for every enrolled student,
+review the student profile information for your course. See :ref:`View and
+download student data`.
 
 
-.. _Define Manual Cohorts:
+.. _About Manual Cohorts:
 
-======================
-Define Manual Cohorts
-======================
+==============
+Manual Cohorts
+==============
 
-Before you define your manual cohorts, note that students can see the name of
-the cohort they are assigned to. The message "This post is visible only to
-{cohort name}" appears with each post in discussion topics that are divided by
-cohort. See :ref:`Read the Cohort Indicator in Posts`.
+.. note:: Manual assignments should be as complete as possible before your
+   course starts. If student enrollment continues after your course starts, you
+   should continue to assign new students to cohorts. If you need to make
+   changes to the way you have configured cohorts while your course is running,
+   see :ref:`Altering Cohort Configuration`.
 
-.. note:: You cannot delete cohorts, but you can change their names or the way
-   in which students are assigned to them. If you need to make changes to the
-   way you have configured cohorts while your course is running, see
-   :ref:`Altering Cohort Configuration`.
-
-#. View the live version of your course. For example, in Studio click **View
-   Live**.
-
-#. Click **Instructor**, then click **Membership**. 
-
-#. Scroll to the **Cohort Management** section at the bottom.
-
-#. Click **Add Cohort**.
-
-#. Enter a name for the cohort, and then click **Save** below the **New Cohort
-   Name** field.
-
-
-.. _Assign Students to Cohorts Manually:
-
-====================================
-Assign Students to Cohorts Manually
-====================================
-
-.. note:: Manual assignments should be as complete as possible before your 
- course starts. If student enrollment continues after your course starts, you
- should continue to assign new students to cohorts. 
-
-#. View the live version of your course. For example, in Studio click **View
-   Live**.
-
-#. Click **Instructor**, then click **Membership**. 
-
-#. Scroll to the **Cohort Management** section at the bottom.
-
-#. Select a cohort from the drop down list.
-
-#. On the **Manage Students** tab, under **Add students to this cohort**, enter
-   the username or email address of a single student, or enter multiple names or
-   addresses separated by commas or new lines. You can copy email address or
-   username data from a .csv file and paste it into this field.
-
-#. Click **Add Students**. The students are assigned to the selected manual
-   cohort. A message appears to indicate the number of students who were added to
-   the cohort. Because students can belong to only one cohort, the message also
-   indicates the number of students whose assignment to another cohort was changed
-   by this procedure.
-
-For a report that includes the cohort assignment for every enrolled
-student, review the student profile information for your course. See :ref:`View
-and download student data`.
+For a report that includes the cohort assignment for every enrolled student,
+review the student profile information for your course. See :ref:`View and
+download student data`.
 
 
 .. _Assign Students to Cohort Groups by uploading CSV:
@@ -271,9 +205,9 @@ Assign Students to Cohorts by Uploading a .csv File
 ========================================================
 
 In addition to assigning students to cohorts by entering usernames or email
-addresses directly on the Membership page in the Instructor Dashboard, you can
-also upload a .csv file containing a list of students and the cohorts that you
-want to assign them to.
+addresses directly on the Cohort Management page in the Instructor Dashboard,
+you can also upload a .csv file containing a list of students and the cohorts
+that you want to assign them to.
 
 Any assignments to cohorts that you specify in the .csv files you upload
 will overwrite or change existing cohort assignments. The configuration of
@@ -346,13 +280,13 @@ Follow these steps to assign students to cohorts by uploading a .csv file.
 #. View the live version of your course. For example, in Studio, click **View
    Live**.
 
-#. Click **Instructor**, then click **Membership**. 
+#. Click **Instructor**, then click **Cohort Management**. 
 
-#. Scroll to the **Cohort Management** section at the bottom.
+#. In the dropdown list of cohorts, select the cohort to which you are adding
+   students.
 
-#. On the **Manage Students** tab, under **Assign students to cohorts by
-   uploading a CSV file**, click **Browse** to navigate to the .csv file you
-   want to upload.
+#. Click **Assign students to cohorts by uploading a CSV file**, then click
+   **Browse** to navigate to the .csv file you want to upload.
 
 #. Click **Upload File and Assign Students**. A status message displays
    above the **Browse** button.
@@ -453,7 +387,7 @@ posts have "disappeared".
 To verify the cohort assignments for your students, download the  :ref:`student
 profile report<View and download student data>` for your course. If changes are
 needed, you can :ref:`assign students<Assign Students to Cohorts Manually>` to
-different cohorts manually on the **Membership** page of the Instructor
+different cohorts manually on the **Cohort Management** page of the Instructor
 Dashboard, or :ref:`upload cohort assignment changes<Assign Students to Cohort
 Groups by uploading CSV>` in a .csv file.
 
@@ -472,16 +406,15 @@ To rename a cohort, follow these steps.
 #. View the live version of your course. For example, in Studio click **View
    Live**.
 
-#. Click **Instructor**, then click **Membership**. 
-
-#. Scroll to the **Cohort Management** section at the bottom.
+#. Click **Instructor**, then click **Cohort Management**. 
 
 #. From the drop down list, select the cohort whose name you want to change.
 
 #. On the **Settings** tab, in the **Cohort Name** field, enter a new name for
    the cohort.
 
-#. Click **Save**. The name for the cohort is updated throughout the LMS and the courseware, including student-visible views.
+#. Click **Save**. The name for the cohort is updated throughout the LMS and the
+   courseware, including student-visible views.
 
 
 .. _Deleting a Cohort:
@@ -490,12 +423,15 @@ To rename a cohort, follow these steps.
 Delete a Cohort
 ================
 
-Deletion of cohorts is not supported. The **Membership** page of the Instructor
-Dashboard does not offer an option to delete your manual cohorts.
+Deletion of cohorts is not supported. However, it is possible to :ref:`rename a
+cohort<Renaming a Cohort>`, :ref:`change its assignment method <Changing the
+Assignment Method of a Cohort>`, or move students to other cohorts, instead of
+deleting a cohort.
 
-It is possible instead to :ref:`rename a cohort<Renaming a Cohort>`, or
-:ref:`change its assignment method <Changing the Assignment Method of a
-Cohort>`.
+If you decide that you must alter cohort configuration after your course starts
+and activity in the course discussion begins, be sure that you understand the
+consequences of these actions. For more details, see :ref:`Altering Cohort
+Configuration`.
 
 
 .. _Changing the Assignment Method of a Cohort:
@@ -524,15 +460,13 @@ To change the assignment method of a cohort, follow these steps.
 #. View the live version of your course. For example, in Studio click **View
    Live**.
 
-#. Click **Instructor**, then click **Membership**. 
-
-#. Scroll to the **Cohort Management** section at the bottom.
+#. Click **Instructor**, then click **Cohort Management**. 
 
 #. From the drop down list, select the cohort whose assignment method you want
    to change.
 
 #. On the **Settings** tab, the current assignment method is selected. Change
-   the assignment method by selecting the other option, either **Randomly
+   the assignment method by selecting the other option, either **Automatically
    Assigned** or **Manually Assigned**.
 
 #. Click **Save**. 
@@ -540,8 +474,8 @@ To change the assignment method of a cohort, follow these steps.
    The cohort assignment method is updated. When you refresh the page, the new
    cohort assignment method for the cohort is selected.
 
-   Changing the cohort assignment method has no effect on students who are
-   already assigned to this and other cohorts in your course. Students who
+.. note:: Changing the cohort assignment method has no effect on students who
+   are already assigned to this and other cohorts in your course. Students who
    access the course after you make this change are assigned to cohorts based on
    the new assignment method of this cohort combined with the assignment methods
    of all other cohorts in your course.
@@ -553,11 +487,16 @@ To change the assignment method of a cohort, follow these steps.
 Disable the Cohort Feature
 ==========================
 
-You can disable the cohort feature for your course. Follow the instructions for
-:ref:`enabling the cohort feature<Enable Cohorts>`, but set ``"cohorted":
-false``. All discussion posts immediately become visible to all students.
+To disable cohorts in your course, follow these steps.
 
-If you do re-enable the cohort feature by setting ``"cohorted": true``, all
-previous student cohort assignments are reenabled, and all visibility settings
-for posts are reapplied. However, any posts created while the cohort feature
-was disabled will remain visible to all users.
+#. In the LMS, select **Instructor**, then select **Cohort Management**. 
+
+#. Clear the **Enable Cohorts** option.
+   
+All discussion posts and course content that was previously divided by cohort
+immediately become visible to all students.
+
+If you re-enable the cohort feature after disabling it, all previous student
+cohort assignments are reenabled, and all visibility settings for posts and
+courseware are re-applied. However, any posts created while the cohort feature
+was disabled are not divided by cohort, and  remain visible to all users.

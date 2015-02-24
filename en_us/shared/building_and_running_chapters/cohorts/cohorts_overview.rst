@@ -229,6 +229,6 @@ default cohort in your course, and change their cohort assignments. Note,
 however, that in divided discussion topics students can only see posts by
 members of their currently assigned cohort: when a student is reassigned, posts
 that he previously saw will seem to have "disappeared". To avoid negatively
-affecting the student experiement, any cohort assignment changes should be done
+affecting the student experience, any cohort assignment changes should be done
 as early in the course run as possible, so that students' views of discussion
 posts and contributions remain consistent over time.
