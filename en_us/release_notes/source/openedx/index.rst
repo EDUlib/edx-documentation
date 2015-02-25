@@ -3,6 +3,17 @@ Open edX
 ####################################
 
 ******************
+February 26, 2015
+******************
+
+==========================
+Accessibility enhancements
+==========================
+
+In the course About pages, ``<fieldset>`` elements now have ``<legend>``
+elements for screenreaders. (TNL-1371)
+
+******************
 February 23, 2015
 ******************
 

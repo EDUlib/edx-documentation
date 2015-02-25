@@ -3,6 +3,14 @@ edX Learning Management System
 ####################################
 
 ******************
+February 26, 2015
+******************
+
+* When creating problems using XML, authors can add inline markers that show
+  additional information to a user when he hovers his cursor over the marker in
+  the problem text. (OSPR-353)
+
+******************
 February 12, 2015
 ******************
 
