@@ -5,6 +5,10 @@
 
 .. _edX Open Learning XML Guide: http://edx-open-learning-xml.readthedocs.org/en/latest/index.html
 
+.. _Open edX Release Notes: http://edx.readthedocs.org/projects/open-edx-release- notes/en/latest/index.html
+
+.. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/index.html
+
 .. OLX Guide Links
 
 .. _Example of OLX for a Studio Course: http://edx-open-learning-xml.readthedocs.org/en/latest/studio-example/index.html#example-of-olx-for-a-studio-course
