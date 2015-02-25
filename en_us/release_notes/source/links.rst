@@ -5,7 +5,7 @@
 
 .. _edX Open Learning XML Guide: http://edx-open-learning-xml.readthedocs.org/en/latest/index.html
 
-.. _Open edX Release Notes: http://edx.readthedocs.org/projects/open-edx-release- notes/en/latest/index.html
+.. _Open edX Release Notes: http://edx.readthedocs.org/projects/open-edx-release-notes/en/latest/index.html
 
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/index.html
 
