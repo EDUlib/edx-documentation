@@ -9,6 +9,10 @@
 
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/index.html
 
+.. _Open edX Birch Release: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/birch.html#open-edx-birch-release
+
+.. _Configuring the Open edX Platform: http://edx.readthedocs.org/projects/edx-installing-configuring-and-running/en/latest/configuration/index.html
+
 .. OLX Guide Links
 
 .. _Example of OLX for a Studio Course: http://edx-open-learning-xml.readthedocs.org/en/latest/studio-example/index.html#example-of-olx-for-a-studio-course

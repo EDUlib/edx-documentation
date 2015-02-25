@@ -7,7 +7,7 @@ February 26, 2015
 ******************
 
 ==========================
-Accessibility enhancements
+Accessibility Enhancements
 ==========================
 
 In the course About pages, ``<fieldset>`` elements now have ``<legend>``

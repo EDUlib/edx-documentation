@@ -6,9 +6,9 @@ edX Learning Management System
 February 26, 2015
 ******************
 
-* When creating problems using XML, authors can add inline markers that show
-  additional information to a user when he hovers his cursor over the marker in
-  the problem text. (OSPR-353)
+When creating problems using XML, authors can use HTMl tags to add inline
+markers that show additional information. Users see the additional text when
+they hover their cursors over markers in the problem text. (OSPR-353)
 
 ******************
 February 12, 2015
