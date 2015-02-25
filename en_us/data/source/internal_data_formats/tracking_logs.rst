@@ -2293,12 +2293,12 @@ for a problem and it is graded successfully.
 .. _forum_events:
 
 ==========================
-Forum Events
+Discussion Forums Events
 ==========================
 
 The server emits these events when a user interacts with course discussions.
-This section presents the forum events alphabetically. However, several of
-these events have hierarchical or sequential relationships.
+This section presents the discussion forum events alphabetically. However,
+several of these events have hierarchical or sequential relationships.
 
 * When a user creates a new thread, such as a student asking a question, the
   server emits an :ref:`forum_thread` event.
@@ -2309,6 +2309,11 @@ these events have hierarchical or sequential relationships.
 * When a user adds a comment to a response, such as a staff member adding a
   clarification to the student answer, the server emits an
   :ref:`forum_comment` event.
+
+These events are included in the daily event logs in addition to the MongoDB
+discussion forums database data that is included in the weekly database data
+files. For more information about the discussion forums database, see
+:ref:`Discussion Forums Data`.
 
 .. _forum_comment:
 
@@ -2323,7 +2328,7 @@ the contributions. When these actions are complete, the server emits an
 
 **Event Source**: Server
 
-**History**: Added nn Feb 2015.
+**History**: Added nn Mar 2015.
 
 ``event`` **Member Fields**:
 
@@ -2367,7 +2372,7 @@ server emits an ``edx.forum.response.created`` event.
 
 **Event Source**: Server
 
-**History**: Added nn Feb 2015. 
+**History**: Added nn Mar 2015. 
 
 ``event`` **Member Fields**:
 
@@ -2472,7 +2477,7 @@ emits an ``edx.forum.thread.created`` event.
 
 **Event Source**: Server
 
-**History**: Added nn Feb 2015.
+**History**: Added nn Mar 2015.
 
 ``event`` **Member Fields**:
 
