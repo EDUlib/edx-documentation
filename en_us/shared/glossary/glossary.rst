@@ -25,14 +25,7 @@ A
   The course page that provides potential students with a course summary,
   prerequisites, a course video and image, and important dates.
 
-  For more information, see :ref:`The Course Summary Page`.
-
-**Accessible Label**
-
-  The descriptive, identifying name that you supply when you add a problem
-  component to your course. All problems require accessible labels.
-
-  For more information, see :ref:`Create Exercises`.
+  See :ref:`Providing a Course Overview` for more information.
 
 .. _Advanced Editor_g:
  
