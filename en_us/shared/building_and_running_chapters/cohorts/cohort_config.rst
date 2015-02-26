@@ -4,7 +4,7 @@
 Enabling and Configuring the Cohorts Feature
 ############################################
 
-To support cohorts in your course, you select an initial strategy for assigning
+If you want to use cohorts in your course, you select a strategy for assigning
 your students to cohorts: automated assignment, manual assignment, or a hybrid
 approach. Although you can change the assignment method for cohorts at any time,
 you should have a strategy in mind as you design your course, and only make
@@ -26,10 +26,10 @@ configuration steps (as applicable).
 
   * :ref:`Implement a manual assignment strategy<Implementing the Manual
     Assignment Strategy>` and :ref:`manually assign students<Assign Students to
-    Cohorts Manually>` to them
+    Cohorts Manually>` to the cohorts you create
 
   * :ref:`Use a combination of automated and manual assignment<Hybrid
-    Assignment>`.
+    Assignment>`
 
 3. Optionally, identify the discussion topics that you want to be divided by
    cohort.
@@ -59,13 +59,13 @@ Implementing an Automated Assignment Strategy
 ***************************************************
 
 To implement an automated assignment strategy of students to cohorts, you
-:ref:`enable the cohort feature<Enable Cohorts>` for your course, :ref:`create
-cohorts<Add Cohorts>`, and specify that students are automatically assigned to
-each cohort.
+:ref:`enable the cohort feature<Enable Cohorts>` for your course, and
+:ref:`create cohorts<Add Cohorts>` to which students are automatically and
+randomly assigned.
 
-You create automated cohorts for either an all automated assignment strategy, or
-for a hybrid assignment strategy. For more information, see :ref:`All Automated
-Assignment` or :ref:`Hybrid Assignment`.
+For a scenario using an automated assignment strategy, see :ref:`All Automated
+Assignment`. For a scenario using a combination of automated and manual
+assignment to cohorts, see :ref:`Hybrid Assignment`.
 
 .. note:: You can add students manually to any cohort, whether it was created as
    an automated cohort or a manual cohort.
@@ -78,13 +78,12 @@ Implementing a Manual Assignment Strategy
 ***************************************************
 
 To implement a manual assignment strategy of students to cohorts, you
-:ref:`enable the cohort feature<Enable Cohorts>` for your course, :ref:`create
-cohorts<Add Cohorts>`, and specify that students are manually assigned to each
-cohort.
+:ref:`enable the cohort feature<Enable Cohorts>` for your course, and :ref:`create
+cohorts<Add Cohorts>` to which you manually assign students.
 
-You create manual cohorts for either an all manual assignment strategy, or for a
-hybrid assignment strategy. For more information, see :ref:`All Manual
-Assignment` or :ref:`Hybrid Assignment`.
+For a scenario using a manual assignment strategy, see :ref:`All Manual
+Assignment`. For a scenario using a combination of automated and manual
+assignment to cohorts, see :ref:`Hybrid Assignment`.
 
 .. note:: You can add students manually to any cohort, whether it was created as
    an automated cohort or a manual cohort.
@@ -112,7 +111,7 @@ cohorts<Add Cohorts>`.
 Adding Cohorts
 ****************
 
-After you enable cohorts, you can add cohorts.
+After you enable the cohorts feature for your course, you can add cohorts.
 
 #. In the LMS, select **Instructor**, then select **Cohort Management**.
 

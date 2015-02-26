@@ -5,12 +5,12 @@
 Using Cohorts in your Courses
 #############################
 
-By :ref:`setting up cohorts<Enabling and Configuring Cohorts>` in a course, you
-create smaller communities of students. You can design different course
-experiences for students in different cohorts. In discussion topics that are
-divided by cohort, students can also communicate and share experiences privately
-within the cohort that they are assigned to. Cohort-specific discussion
-opportunities can help students develop a sense of community, provide
+If you want to create smaller communities in your course, or design different
+course experiences for different groups of students, you can :ref:`set up
+cohorts<Enabling and Configuring Cohorts>` in your course.  In discussion topics
+that are divided by cohort, students can also communicate and share experiences
+privately within the cohort that they are assigned to. Cohort-specific
+discussion opportunities can help students develop a sense of community, provide
 specialized experiences, and encourage deeper, more meaningful course
 involvement.
 
@@ -54,22 +54,27 @@ have students randomly assigned to them if students do not belong to any cohort
 by the time they access the course content (including the course **Discussion**
 page or content-specific discussion topics). If you have not created any
 automated cohorts by the time students access course content, a default
-automated cohort is created and used for automatic assignment so that no student
-in the course is without a cohort.
+automated cohort is created and used for automatic assignment, so that no
+student in the course is without a cohort.
+
+Determine the basic strategy that you will use to create cohorts for your
+course. An automated assignment strategy means that you create cohorts to which
+students are assigned automatically and randomly. A manual assignment strategy
+means that you create cohorts to which students are assigned only when you or
+your course team manually adds them. You can use a hybrid assignment method by
+creating a combination of automated and manual cohorts. Typically, your purpose
+in including the cohort feature in your course determines which assignment
+option you use for your course.
 
 .. note:: You can add students manually to any cohort, whether it was created as
    an automated cohort or a manual cohort.
 
-You can use a hybrid assignment method by creating a combination of automated
-and manual cohorts. Typically, your purpose in including the cohort feature in
-your course determines which assignment option you use for your course.
-
 .. note:: Although you can change the assignment method of a cohort at any time
-   after you create it, you should have a cohort assignment strategy in mind as you
-   design your course, and only make changes to cohorts while the course is running
-   if absolutely necessary. Be aware of the implications of changing cohort
-   configuration while your course is running. For more information, see
-   :ref:`Altering Cohort Configuration` and . In general, to provide students with a
+   after you create it, you should have a cohort assignment strategy in mind as
+   you design your course, and only make changes to cohorts while the course is
+   running if absolutely necessary. Be aware of the implications of changing
+   cohort configuration while your course is running. For more information, see
+   :ref:`Altering Cohort Configuration`. In general, to provide students with a
    consistent experience throughout the course run, do not change cohort
    configuration or a student's cohort assignment after your course begins.
 
@@ -214,9 +219,9 @@ accesses your course content. Students who have not been manually assigned to a
 cohort when they access the course content are automatically assigned to the
 default cohort.
 
-Students who are assigned to the default cohort see a cohort name of "Default
-Group" in discussion posts. If you want students to see a different name for the
-default cohort, you can change its name. For details about renaming cohorts, see
+Students who are in the default cohort see a cohort name of "Default Group" in
+discussion posts. If you want students to see a different name for the default
+cohort, you can change its name. For details about renaming cohorts, see
 :ref:`Renaming a Cohort`.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/post_visible_default.png
