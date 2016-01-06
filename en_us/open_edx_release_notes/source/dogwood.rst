@@ -244,6 +244,23 @@ syntax ``lms saml --pull`` instead of ``lms saml pull``.
 **************************
 New and Changed Events
 **************************
+=======
+.. Use ====== headers
+
+TBD
+
+*****************
+REST API Changes
+*****************
+
+EdX has built and published documentation for the following REST APIs, which
+are available in the Open edX Dogwood release.
+
+* TBD
+
+*************
+New Events
+*************
 
 The following list includes new or changed events in the Open edX Dogwood
 release.
@@ -482,6 +499,36 @@ More Information on Dogwood Release Changes
 ************************************************
 
 The `edX Release Notes`_ contain a summary of changes that are deployed to
+=======
+* TBD
+
+For more information about events, see `Events in Tracking Logs`_ in the *edX
+Research Guide*. Note that this document is intended for edX partners running
+courses on edx.org. However, the event listing applies to Open edX instances as
+well.
+
+************************************************
+Accessibility Updates
+************************************************
+
+In keeping with edX's commitment to creating accessible content for everyone,
+everywhere, the Open edX Dogwood release contains several accessibility
+enhancements in the Open edX LMS and discussions.
+
+* TBD
+
+************************************************
+Supported Browser Changes
+************************************************
+
+TBD
+
+************************************************
+More Information on Cypress Release Changes
+************************************************
+
+The `edX Release Notes`_ contain a list of weekly changes that are deployed to
+>>>>>>> Skeletons for Dogwood docs
 edx.org. Those changes are part of the master branch of the edX Platform in
 GitHub.
 
