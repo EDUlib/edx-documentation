@@ -68,7 +68,8 @@ LTI XBlock
 ***********
 
 A new LTI XBlock is now available. This XBlock is intended to replace the
-existing LTI xModule. In addition to all of the functionality previously offered by the xModules, the LTI XBlock also offers course teams the ability to
+existing LTI XModule. In addition to all of the functionality previously
+offered by the XModules, the LTI XBlock also offers course teams the ability to
 configure the way that learning tools interoperability (LTI) components open
 when learners use them: in a modal window, in a separate web browser window, or
 embedded in a course page.
