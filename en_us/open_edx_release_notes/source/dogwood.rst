@@ -33,7 +33,7 @@ New LTI XBlock
 
 A new LTI XBlock is now available. This XBlock is intended to replace the
 existing LTI XModule. In addition to all of the functionality previously
-offered by the XModules, the LTI XBlock also offers course teams the ability to
+offered by the XModule, the LTI XBlock also offers course teams the ability to
 configure the way that learning tools interoperability (LTI) components open
 when learners use them: in a modal window, in a separate web browser window, or
 embedded in a course page.
@@ -253,6 +253,7 @@ New and Changed Events
 =======
 
 TBD
+=======
 
 ===========================
 Search Feature for DevStack
@@ -262,6 +263,29 @@ When you install the Open edX developer stack, the search feature is now
 enabled by default. For more information about how you can configure this
 feature, see :ref:`installation:Enable edX Search`. For more information about
 how learners can use this feature, see :ref:`openlearners:SFD Search`.
+
+=========================
+Timed Exams Feature
+=========================
+
+This release includes the timed exams feature. Course teams can configure a
+course subsection so that learners have a specific period of time to complete
+and submit all problems in that subsection.
+
+For more information, see  the :ref:`opencoursestaff:Timed Exams` section in
+the *Building and Running an Open edX Course* guide.
+
+.. _Otto Ecommerce Service:
+
+=======================
+Otto Ecommerce Service
+=======================
+
+Open edX installations can now add an ecommerce service. `Otto`_ is an extended
+Django application that manages and handles orders for product catalogs.
+
+Documentation about how to install and set up Otto, configure partners and
+sites, add assets, and fulfill orders will be available shortly.
 
 =========================================
 TPA Sign In Without Account Activation
@@ -309,18 +333,9 @@ management command used when :ref:`installation:testing an enabled SAML
 identity provider<Test an Enabled SAML Provider>`. This command now uses the
 syntax ``lms saml --pull`` instead of ``lms saml pull``.
 
-*****************
-REST API Changes
-*****************
-
-EdX has built and published documentation for the following REST APIs, which
-are available in the Open edX Dogwood release.
-
-* TBD
-
-*************
-New Events
-*************
+**************************
+New and Changed Events
+**************************
 
 The following list includes new or changed events in the Open edX Dogwood
 release.
@@ -577,50 +592,96 @@ For more information about these events, see `Events in Tracking Logs`_ in the
 partners running courses on edx.org. However, the event listing applies to Open
 edX instances as well.
 
-************************************************
+***********************
 Accessibility Updates
-************************************************
+***********************
 
 In keeping with edX's commitment to creating accessible content for everyone,
-everywhere, the Open edX Dogwood release contains several accessibility
-enhancements in the Open edX LMS and discussions.
+everywhere, the Open edX Dogwood release contains numerous accessibility
+enhancements and improvements to readability and navigability.
 
-* TBD
+* In Studio, changes to the **Unit** page make it easier to use a keyboard to
+  navigate to the options in the **Add New Component** section of this page. It
+  is also easier to use a keyboard to make selections from the list of choices
+  that appears when you select the **Advanced** option.
 
-************************************************
+* On course pages in the LMS, options for actions that course team members can
+  take, such as **View Unit in Studio** and **Staff Debug Info**, are now pink
+  instead of blue. This change increases the contrast between the text and the
+  gray background when these options are in a default state.
+
+* In the LMS, the list of topics on the **Discussion** page now uses colors
+  that meet WCAG AA guidelines for contrast. As a result, the background color
+  of the selected topic is now white instead of light blue.
+
+* The calculator now has a background color that contrasts with the foreground
+  on the input label.
+
+* Alert notifications for course wiki articles have been updated to increase
+  contrast between the background color and the alert text.
+
+* The left navigation menu presented by the **Courseware** page was
+  re-engineered. Navigating through sections, subsections and units using the
+  course navigation menu is now significantly improved for keyboard and screen
+  reader users.
+
+* Keyboard navigation in open response assessments was improved by restoring
+  keyboard focus outline indicators.
+
+===================================
+Design Updates to the Video Player
+===================================
+
+This release includes several updates to the edX video player.
+
+* The user interface controls for the player appear only after a learner
+  selects **play** for a video, and take up less screen space.
+
+* New icon designs are used for the **full screen** and **show transcript**
+  options.
+
+* The language menu, for video with transcript in multiple languages, is
+  indicated by a drop-down menu icon next to the **show transcript** icon.
+
+* To improve accessibility, all options use an icon font method that
+  streamlines delivery.
+
+* To enhance the experience of learners who use screen readers, changes that
+  improve spoken announcements and simplify navigation are also included.
+
+*********************
 Deprecated Features
-************************************************
+*********************
 
-The following features are deprecated as of the Open edX Dogwood release.
+Several features are deprecated as of the Open edX Dogwood release.
 
 .. contents::
  :depth: 1
  :local:
 
+=============
+Shoppingcart
+=============
 
-"shoppingcart" functional should be considered deprecated as of Dogwood and will be removed in a future release. Similar services will be provided by "Otto" going forward
-
-
-
-Old code has been removed:
-Admin dashboard
-abtest_module
-
-
-Removed support for the outdated ispublic field on the Course Module, including its corresponding ACCESS_REQUIRE_STAFF_FOR_COURSE feature flag.  Instead, operators should use COURSE_CATALOG_VISIBILITY_PERMISSION and COURSE_ABOUT_VISIBILITY_PERMISSION settings.
+The "shoppingcart" functionality is deprecated as of the Dogwood release, and
+it will be removed in a future release. Similar services are now provided by
+the :ref:`Otto Ecommerce Service`.
 
 
-Several unused and deprecated items have been removed from the edX Platform.
-
-The following list includes some of these items.
-
-The Checklist page previously available from the Studio Tools menu.
+.. Removed support for the outdated ``ispublic`` field on the Course Module, including its corresponding ACCESS_REQUIRE_STAFF_FOR_COURSE feature flag.  Instead, operators should use COURSE_CATALOG_VISIBILITY_PERMISSION and COURSE_ABOUT_VISIBILITY_PERMISSION settings.
 
 
+==================
+Studio Checklist
+==================
 
-==================================
-Original ORA Problems Deprecated
-==================================
+The **Tools** menu in Studio no longer offers the **Checklists** option. For a
+template checklist, see the :ref:`opencoursestaff:Course Launch Checklist`
+topic in the *Building and Running an Open edX Course* guide.
+
+=========================
+Original ORA Problems
+=========================
 
 When you access a course that contains an open response assessment created
 using the original version of this assignment type (ORA 1), Studio now
@@ -629,7 +690,6 @@ displays the message, "This course uses features that are no longer supported."
 A newer version of the open response assessments feature (ORA 2) was released
 over a year ago, and the ability to add ORA 1 problems was removed from Studio
 in May 2014.
-
 
 ============================
 Legacy Instructor Dashboard
@@ -658,7 +718,7 @@ The following XModules and tools are deprecated in the Dogwood release.
 
 * The LTI XModule. This XModule has been replaced by the :ref:`LTI XBlock`.
 
-* Support has now ended for the graphical_slider_tool. Code for this tool will
+* Support has ended for the graphical_slider_tool. Code for this tool will
   be removed entirely in the Open edX Eucalyptus release.
 
 ============
@@ -729,6 +789,22 @@ Patch Releases
 
 An update to the release packaging was made to fix errors during installations
 and upgrades.
+
+
+************************************************
+More Information on Dogwood Release Changes
+************************************************
+
+The `edX Release Notes`_ contain a summary of changes that are deployed to
+edx.org. Those changes are part of the master branch of the edX Platform in
+GitHub.
+
+You can also find `release announcements`_ on open.edx.org, which list changes
+in each release on edx.org. You can subscribe to have release announcements
+sent to your email account.
+
+Changes listed for 16 December 2015 and before are included in the Dogwood
+release of Open edX.
 
 
 .. include:: links.rst
