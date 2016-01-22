@@ -28,42 +28,6 @@ New LTI XBlock
 
 A new LTI XBlock is now available. This XBlock is intended to replace the
 existing LTI XModule. In addition to all of the functionality previously
-offered by the XModule, the LTI XBlock also offers course teams the ability to
-=======
-New XBlocks
-==============
-
-Oppia XBlock
-************
-
-`Oppia`_ explorations are short, interactive tutorials. With the Oppia XBlock,
-course teams can embed Oppia explorations in courses.
-
-For information about how to install the `Oppia XBlock`_, see the *Installing,
-Configuring, and Running the Open edX Platform* guide.
-
-For information about how to enable this tool in Studio and add Oppia
-explorations, see :ref:`opencoursestaff:Oppia Exploration Tool` in the
-*Building and Running an Open edX Course* guide.
-
-Office Mix XBlock
-******************
-
-With `Office Mix`_, course teams can turn PowerPoint presentations into
-interactive online lessons that are called mixes. With the Office Mix XBlock,
-course teams can embed  mixes in courses.
-
-For information about how to enable this tool in Studio and add mixes to a
-course, see :ref:`opencoursestaff:Office Mix Tool` in *Building and Running an
-Open edX Course*.
-
-.. _LTI XBlock:
-
-LTI XBlock
-***********
-
-A new LTI XBlock is now available. This XBlock is intended to replace the
-existing LTI XModule. In addition to all of the functionality previously
 offered by the XModules, the LTI XBlock also offers course teams the ability to
 configure the way that learning tools interoperability (LTI) components open
 when learners use them: in a modal window, in a separate web browser window, or
