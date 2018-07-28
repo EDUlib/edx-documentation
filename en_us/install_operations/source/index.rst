@@ -1,7 +1,7 @@
 .. _Installing, Configuring, and Running the Open edX Platform:
 
 ###########################################################
-Installing, Configuring, and Running the Open edX Platform 
+Installing, Configuring, and Running the Open edX Platform
 ###########################################################
 
 This guide provides instructions for using your own instance of the Open edX
