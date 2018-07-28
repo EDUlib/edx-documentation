@@ -5,12 +5,13 @@ sys.path.append('../../../')
 
 from shared.conf import *
 
-# General information about the project.
-project = u'Installing, Configuring, and Running the Open edX Platform: Ficus Release'
-set_audience(OPENEDX, DEVELOPERS)
+project = u'Building and Running an edX Course'
 
-# remove directory when content is first added to it, and add to index
-exclude_patterns = ['links.rst', 'configuration/configure_milestone_app.rst']
+tags.add('Partners')
+set_audience(PARTNER, COURSE_TEAMS)
 
-# overrides the navigation depth setting from shared/conf.py
-html_theme_options['navigation_depth'] = 2
+product = 'Partners'
+
+
+def setup(app):
+    app.add_config_value('product', '', True)
