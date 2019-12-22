@@ -218,9 +218,7 @@
 
 .. EDX WIKI LINKS
 
-.. _Open edX Releases Wiki page: https://edx.readthedocs.io/projects/edx-developer-docs/en/latest/named_releases.html
-
-.. _Open edX Named Releases page: https://edx.readthedocs.io/projects/edx-developer-docs/en/latest/named_releases.html
+.. _Open edX Releases Wiki page: https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/11108700/Open+edX+Releases
 
 .. _Release Pages: https://openedx.atlassian.net/wiki/pages/viewpage.action?pageId=12550314
 
