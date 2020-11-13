@@ -1,8 +1,8 @@
 .. _Building and Running an Open edX Course:
 
-########################################################
-Building and Running an Open edX Course: Juniper Release
-########################################################
+####################################################
+Building and Running an Open edX Course: Koa Release
+####################################################
 
 .. toctree::
    :numbered:
